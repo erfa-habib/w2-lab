@@ -1,0 +1,165 @@
+/* Your main styles at the top apply to the smallest screen/viewport,
+   e.g. width of 320 px */
+
+/* We're using badly-formed divs in place of semantic markup.
+   But even with semantic elements, you may need to change the
+   'display' property of block or inline elements so that you can
+   lay out the design according to the instruction image. */
+
+div.header span.img {
+    display: block;
+}
+body {
+    font-family: "Times New Roman", Georgia, Serif;
+}
+
+
+/* This is our first breakpoint! If you change the orientation of the mobile
+   phone to horizontal, then the next width breakpoint is 480px (in our case). */
+
+@media screen and (min-width: 480px) {
+    /* Re-style here */
+    
+    /* Tip! Since we need floating columns, we can apply the floats here
+       and also the self-clearing container trick. */
+    .img { width: 450px;
+        background-color: aqua;
+        text-align: center;
+        color: #FFFFFF;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    
+    }
+    #menu:link {
+        color: #FFFFFF;
+
+    }
+    a:link {
+        color: #FFFFFF;
+    }
+    div#menu { width: 450px;
+        text-align: center;
+        padding: 5px;
+        color: #FFFFFF;
+        background-color: #C0C0C0;
+        color: #FFFFFF;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        
+    }
+    div.section:after {
+        content: " ";
+        display: table;
+        clear: both;
+        height: 0;
+        visibility: hidden;
+    }
+    
+    div.section div.article {
+        display: inline;
+        float: left;
+        width: 218px;
+        margin: 2px;
+        padding: 5px;
+        padding: 5px;
+        text-align: center;
+        background-color: #003cb3;
+        color: #FFFFFF;
+    }
+    div.footer {
+        width: 450px;
+        background-color: #C0C0C0;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 5px;
+        text-align: center;
+        color: #FFFFFF;
+        
+    }
+}
+
+
+
+/* We're skipping a lot of possible breakpoints here ... */
+
+
+
+@media screen and (min-width: 1280px)
+{
+    /* Re-style here, if necessary! */
+    .img { width: 100px;
+        background-color: aqua;
+        text-align: center;
+        color: #FFFFFF;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 5px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        
+    }
+    .header {
+        display: inline;
+    }
+    #menu:link {
+        color: #FFFFFF;
+        
+    }
+    a:link {
+        color: #FFFFFF;
+    }
+    div#menu { width: 450px;
+        text-align: center;
+        padding: 5px;
+        color: #FFFFFF;
+        background-color: #C0C0C0;
+        color: #FFFFFF;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        
+    }
+    div.section:after {
+        content: " ";
+        display: table;
+        clear: both;
+        height: 0;
+        visibility: hidden;
+    }
+    
+    div.section div.article {
+        display: inline;
+        float: left;
+        width: 218px;
+        margin: 2px;
+        padding: 5px;
+        padding: 5px;
+        text-align: center;
+        background-color: #003cb3;
+        color: #FFFFFF;
+    }
+    div.footer {
+        width: 450px;
+        background-color: #C0C0C0;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        padding: 5px;
+        text-align: center;
+        color: #FFFFFF;
+        
+    }
+}
